@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fb8e77d0-f618-4284-bd7c-2fa877e4b392" name="Default Changelist" comment="FIRST COMMIT - EMPLOYEE CRUD FUNCTIONALITY IMPLEMENTED kkk" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="JupyterTrust" id="5d2b65a3-1aa1-4d6a-b608-1821d4798f62" />
+  <component name="ProjectId" id="1k9OwZslLQJ3YDeEsabBzkEIvmF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="last" type="Python.DjangoServer" factoryName="Django server">
+      <module name="last" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="last.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb8e77d0-f618-4284-bd7c-2fa877e4b392" name="Default Changelist" comment="" />
+      <created>1605109580242</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605109580242</updated>
+      <workItem from="1605109594770" duration="11165000" />
+      <workItem from="1605145015944" duration="2501000" />
+      <workItem from="1605154358665" duration="4684000" />
+    </task>
+    <task id="LOCAL-00001" summary="FIRST COMMIT - EMPLOYEE CRUD FUNCTIONALITY IMPLEMENTED">
+      <created>1605144454481</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605144454481</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="BEK_SORT_TYPE" value="1" />
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FIRST COMMIT - EMPLOYEE CRUD FUNCTIONALITY IMPLEMENTED" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIRST COMMIT - EMPLOYEE CRUD FUNCTIONALITY IMPLEMENTED" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605111451266">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1605111451266" />
+    <state x="421" y="82" key="FileChooserDialogImpl" timestamp="1605145386231">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1605145386231" />
+    <state x="519" y="238" key="Github.ShareDialog" timestamp="1605145366586">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="519" y="238" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1605145366586" />
+    <state width="1237" height="394" key="GridCell.Tab.0.bottom" timestamp="1605159059995">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="394" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1605159059995" />
+    <state width="1237" height="394" key="GridCell.Tab.0.center" timestamp="1605159059995">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="394" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1605159059995" />
+    <state width="1237" height="394" key="GridCell.Tab.0.left" timestamp="1605159059995">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="394" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1605159059995" />
+    <state width="1237" height="394" key="GridCell.Tab.0.right" timestamp="1605159059995">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="394" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1605159059995" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1605145302525">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1605145302525" />
+    <state x="509" y="74" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1605145268678">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="509" y="74" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1280.680@0.0.1280.680" timestamp="1605145268678" />
+    <state x="458" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605145279577">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="458" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1605145279577" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1605157652708">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1605157652708" />
+  </component>
+</project>

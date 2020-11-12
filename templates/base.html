@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Employee App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background-color:#4DB6AC;">
+<nav class="navbar navbar-light" style="background-color:#17b390;">
+    <a href="#" class="navbar-brand"
+       style="background-color:#5db89b;color:#000000;border-width:10px;border-color:#33ffee;border-style:solid;border-spacing:30px;border-radius: 5px;">Employee
+        App</a>
+    <a class="navbar-link btn-lg" href="{% url 'index' %}" style="background-color:#33ffb8;color:#000000;">Show Employees</a>
+    <a href="{% url 'create-emp' %}" class="navbar-link btn-lg" style="background-color:#33ff96;color:#000000;">Add Employees</a>
+</nav>
+<br>
+{% block content %}
+    <div class="card-columns">
+        {% for e in employee %}
+                    <h5 class="card-title">{{ e.name }}</h5>
+                    <p class="card-text">{{ e.email }}</p>
+                    <div class="card-footer bg-transparent border-dark">
+                        <center>
+                            <a href="update/{{ e.id }}" class="btn btn-warning" id='{{ e.id }}'>UPDATE</a>
+                            <a href="delete/{{ e.id }}" class="btn btn-danger" id='{{ e.id }}'>DELETE</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+</body>
+</html>
