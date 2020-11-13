@@ -9,9 +9,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/employeeapp/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/employeeapp/form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employeeapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/employeeapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employeeapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/employeeapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/employeeapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/employeeapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/create_salary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/salaries.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +53,29 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.views">
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="last" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/employeeapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/employeeapp/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="last" type="Python.DjangoServer" factoryName="Django server">
       <module name="last" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,6 +100,11 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.views" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -89,7 +119,7 @@
       <workItem from="1605154358665" duration="4684000" />
       <workItem from="1605159570804" duration="18003000" />
       <workItem from="1605199097012" duration="9335000" />
-      <workItem from="1605240795726" duration="12542000" />
+      <workItem from="1605240795726" duration="21253000" />
     </task>
     <task id="LOCAL-00001" summary="FIRST COMMIT - EMPLOYEE CRUD FUNCTIONALITY IMPLEMENTED">
       <created>1605144454481</created>
@@ -105,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605250445589</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Employee - Salary or One to Many R/ship Task Implemented.">
+      <created>1605254180106</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605254180106</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,17 +170,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FIRST COMMIT - EMPLOYEE CRUD FUNCTIONALITY IMPLEMENTED" />
     <MESSAGE value="FIRST COMMIT - EMPLOYEE CRUD FUNCTIONALITY IMPLEMENTED kkk" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIRST COMMIT - EMPLOYEE CRUD FUNCTIONALITY IMPLEMENTED kkk" />
+    <MESSAGE value="Employee - Salary or One to Many R/ship Task Implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="Employee - Salary or One to Many R/ship Task Implemented." />
   </component>
   <component name="WindowStateProjectService">
     <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605111451266">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1605111451266" />
-    <state x="248" y="40" width="860" height="651" key="CommitChangelistDialog2" timestamp="1605250445173">
+    <state x="248" y="40" width="860" height="651" key="CommitChangelistDialog2" timestamp="1605254180045">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="248" y="40" width="860" height="651" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1605250445173" />
+    <state x="248" y="40" width="860" height="651" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1605254180045" />
     <state x="421" y="82" key="FileChooserDialogImpl" timestamp="1605145386231">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -152,36 +190,36 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="519" y="238" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1605145366586" />
-    <state width="1324" height="88" key="GridCell.Tab.0.bottom" timestamp="1605253799637">
+    <state width="1324" height="190" key="GridCell.Tab.0.bottom" timestamp="1605263863825">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1237" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1605231851032" />
-    <state width="1324" height="88" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1605253799637" />
-    <state width="1324" height="88" key="GridCell.Tab.0.center" timestamp="1605253799636">
+    <state width="1324" height="190" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1605263863825" />
+    <state width="1324" height="190" key="GridCell.Tab.0.center" timestamp="1605263863824">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1237" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1605231851032" />
-    <state width="1324" height="88" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1605253799636" />
-    <state width="1324" height="88" key="GridCell.Tab.0.left" timestamp="1605253799635">
+    <state width="1324" height="190" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1605263863824" />
+    <state width="1324" height="190" key="GridCell.Tab.0.left" timestamp="1605263863824">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1237" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1605231851032" />
-    <state width="1324" height="88" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1605253799635" />
-    <state width="1324" height="88" key="GridCell.Tab.0.right" timestamp="1605253799636">
+    <state width="1324" height="190" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1605263863824" />
+    <state width="1324" height="190" key="GridCell.Tab.0.right" timestamp="1605263863824">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1237" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1605231851032" />
-    <state width="1324" height="88" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1605253799636" />
+    <state width="1324" height="190" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1605263863824" />
     <state x="159" y="0" key="SettingsEditor" timestamp="1605243585288">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="149" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1605230747962" />
     <state x="159" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1605243585288" />
-    <state x="249" y="79" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1605250452746">
+    <state x="249" y="79" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1605254189381">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1605145302525" />
-    <state x="249" y="79" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1605250452746" />
+    <state x="249" y="79" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1605254189381" />
     <state x="509" y="74" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1605145268678">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

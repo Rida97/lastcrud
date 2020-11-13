@@ -1,25 +1,25 @@
 {% extends 'base.html' %}
 {% block content %}
     <center>
-    <h1 class="display-3" style="background-color:#000000;color:#e999ff;">Create Employees</h1>
-    <form method = 'POST' enctype="multipart/form-data">
-        {% csrf_token %}
-        <table class = 'w-50 table table-light' style="border-radius:10px;background-color:#99ffdb;">
-            {% for field in employee %}
-            <tr>
-                <th>{{field.label}}</th>
-                <td>{{ field }}</td>
-            </tr>
-            {% endfor %}
+        <h6 class="display-4" style="background-color:#000000;color:#99c2ff;">Employee Details</h6>
+        <form method='POST' enctype="multipart/form-data">
+            {% csrf_token %}
+            <table class='w-10 table table-light' style="border-radius:3px;background-color:#99b6ff;">
+                {% for field in employee %}
+                    <tr>
+                        <th>{{ field.label }}</th>
+                        <td>{{ field }}</td>
+                    </tr>
+                {% endfor %}
 
-         {% for s in sal %}
-            <tr>
-                <th>{{s.label}}</th>
-                <td>{{ s }}</td>
-            </tr>
-            {% endfor %}
-        </table>
-        <button type="submit" class="btn btn-lg btn-warning">Submit</button>
-    </form>
-</center>
+                {% for s in sal %}
+                    <tr>
+                        <th>{{ s.label }}</th>
+                        <td>{{ s }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+            <button type="submit" class="btn btn-sm btn-info">Submit</button>
+        </form>
+    </center>
 {% endblock %}
