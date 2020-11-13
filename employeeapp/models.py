@@ -3,7 +3,7 @@ import uuid
 
 
 class Employee(models.Model):
-   # emp_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False, unique=True)
+    department = models.ForeignKey('Department', on_delete=models.CASCADE)
     name = models.CharField(max_length=20, null=False)
     email = models.EmailField(blank=True)
 
@@ -19,12 +19,15 @@ class Salary(models.Model):
     def __str__(self):
         return str(self.salary)
 
- # one dept can have many employees : Master table -> Employee , Foreign Table -> Dept -> it will have the fk employee
+
+class Department(models.Model):
+    deptname = models.CharField(max_length=10, null=False, blank=False)
+
+    def __str__(self):
+        return self.deptname
 
 
-#class Department(models.Model):
- #   employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
-  #  deptname = models.CharField(max_length=10, null=False, blank=False)
+
 
 
 

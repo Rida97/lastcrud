@@ -8,6 +8,7 @@ class EmployeeCreate(forms.ModelForm):
         fields = '__all__'
 
 
+
 class SalaryCreate(forms.ModelForm):
     class Meta:
         model = Salary

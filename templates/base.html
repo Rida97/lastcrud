@@ -26,6 +26,7 @@
                     <div class="card-footer bg-transparent border-dark">
                         <center>
                             <a href="update/{{ s.employee.id }}" class="btn btn-warning" id='{{ s.employee.id }}'>UPDATE</a>
+                            <a href="{% url 'update-sal' s.employee.id %}" class="navbar-link btn-lg" style="background-color:#33ff96;color:#000000;">Update Salary</a>
                             <a href="delete/{{ s.employee.id }}" class="btn btn-danger" id='{{ s.employee.id }}'>DELETE</a>
                         </center>
                     </div>

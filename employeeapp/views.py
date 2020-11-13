@@ -15,14 +15,11 @@ def create_emp(request):
         emp = EmployeeCreate(request.POST)
         if emp.is_valid():
             emp.save()
-           # create_sal(request)
             return redirect('create-sal')
         else:
             return HttpResponse("""your form is wrong, reload on <a href = "{{ url : 'index'}}">reload</a>""")
     else:
         emp = EmployeeCreate()
-     #   sal = SalaryCreate()
-
     return render(request, 'create.html', {'employee': emp})
 
 
@@ -36,34 +33,34 @@ def create_sal(request):
             return HttpResponse("""your form is wrong, reload on <a href = "{{ url : 'index'}}">reload</a>""")
     else:
         sal = SalaryCreate()
-
     return render(request, 'create.html', {'sal': sal})
+
 
 def update_emp(request, emp_id):
     try:
-        employee_update = Employee.objects.get(id=emp_id)
+
+        get_employee = Employee.objects.get(id=emp_id)  # this returns the emp that needs to be updated -> emp_id is passed from base.html
     except Employee.DoesNotExist:
         return redirect('index')
-    employee = EmployeeCreate(request.POST or None, instance=employee_update)
-    if employee.is_valid():
+    employee = EmployeeCreate(request.POST or None, instance=get_employee)  # emp that needs updation is passed here along with the data to be updated in req.POST
+    if employee.is_valid():  # is_valid is form's built in func
         employee.save()
-        employee_id = employee.id
-        return redirect('update_sal', employee_id)
+        print (employee.instance.id) # employee -> form of emp
+        print (get_employee)
+      #  return redirect('update_sal', get_employee.pk)
+        return redirect('update-sal', emp_id=employee.instance.id)
+    return render(request, 'create.html', {'employee': employee})
 
-    #update_sal(request, employee)
-       # return redirect('index')
-    return render(request, 'create.html', {'employee':employee})
 
 def update_sal(request, emp_id):
     try:
-        sal_update = Salary.objects.get(pk=emp_id)
+        get_sal = Salary.objects.get(pk=emp_id) # this allows me to display all employees and i can choose from those employees
     except Salary.DoesNotExist:
         return redirect('index')
-    new_sal = SalaryCreate(request.POST or None, instance=sal_update)
+    new_sal = SalaryCreate(request.POST or None, instance=get_sal)
     if new_sal.is_valid():
         new_sal.save()
     return render(request, 'create.html', {'sal': new_sal})
-
 
 
 def delete_emp(request, emp_id):
@@ -73,7 +70,5 @@ def delete_emp(request, emp_id):
         return redirect('index')
     emp_eliminate.delete()
     return redirect('index')
-
-
 
 
