@@ -13,17 +13,20 @@
         App</a>
     <a class="navbar-link btn-lg" href="{% url 'index' %}" style="background-color:#33ffb8;color:#000000;">Show Employees</a>
     <a href="{% url 'create-emp' %}" class="navbar-link btn-lg" style="background-color:#33ff96;color:#000000;">Add Employees</a>
+    <a href="{% url 'create-sal' %}" class="navbar-link btn-lg" style="background-color:#33ff96;color:#000000;">Add Salary</a>
 </nav>
 <br>
 {% block content %}
     <div class="card-columns">
-        {% for e in employee %}
-                    <h5 class="card-title">{{ e.name }}</h5>
-                    <p class="card-text">{{ e.email }}</p>
+    <br>
+        {% for s in salaries %}
+                    <h5 class="card-title">{{ s.employee.name }}</h5>
+                    <p class="card-text">{{ s }}</p>
+                    <p class="card-text">{{ s.employee.email }}</p>
                     <div class="card-footer bg-transparent border-dark">
                         <center>
-                            <a href="update/{{ e.id }}" class="btn btn-warning" id='{{ e.id }}'>UPDATE</a>
-                            <a href="delete/{{ e.id }}" class="btn btn-danger" id='{{ e.id }}'>DELETE</a>
+                            <a href="update/{{ s.employee.id }}" class="btn btn-warning" id='{{ s.employee.id }}'>UPDATE</a>
+                            <a href="delete/{{ s.employee.id }}" class="btn btn-danger" id='{{ s.employee.id }}'>DELETE</a>
                         </center>
                     </div>
                 </div>

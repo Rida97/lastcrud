@@ -5,11 +5,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb8e77d0-f618-4284-bd7c-2fa877e4b392" name="Default Changelist" comment="FIRST COMMIT - EMPLOYEE CRUD FUNCTIONALITY IMPLEMENTED kkk" />
+    <list default="true" id="fb8e77d0-f618-4284-bd7c-2fa877e4b392" name="Default Changelist" comment="FIRST COMMIT - EMPLOYEE CRUD FUNCTIONALITY IMPLEMENTED kkk">
+      <change afterPath="$PROJECT_DIR$/templates/create_salary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/salaries.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employeeapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/employeeapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employeeapp/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/employeeapp/form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employeeapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/employeeapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employeeapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/employeeapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employeeapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/employeeapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/create.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,6 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="last" type="Python.DjangoServer" factoryName="Django server">
@@ -76,6 +92,8 @@
       <workItem from="1605109594770" duration="11165000" />
       <workItem from="1605145015944" duration="2501000" />
       <workItem from="1605154358665" duration="4684000" />
+      <workItem from="1605159570804" duration="18003000" />
+      <workItem from="1605199097012" duration="9335000" />
     </task>
     <task id="LOCAL-00001" summary="FIRST COMMIT - EMPLOYEE CRUD FUNCTIONALITY IMPLEMENTED">
       <created>1605144454481</created>
@@ -126,22 +144,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="519" y="238" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1605145366586" />
-    <state width="1237" height="394" key="GridCell.Tab.0.bottom" timestamp="1605159059995">
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom" timestamp="1605231851032">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="394" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1605159059995" />
-    <state width="1237" height="394" key="GridCell.Tab.0.center" timestamp="1605159059995">
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1605231851032" />
+    <state width="1237" height="2" key="GridCell.Tab.0.center" timestamp="1605231851032">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="394" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1605159059995" />
-    <state width="1237" height="394" key="GridCell.Tab.0.left" timestamp="1605159059995">
+    <state width="1237" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1605231851032" />
+    <state width="1237" height="2" key="GridCell.Tab.0.left" timestamp="1605231851032">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="394" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1605159059995" />
-    <state width="1237" height="394" key="GridCell.Tab.0.right" timestamp="1605159059995">
+    <state width="1237" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1605231851032" />
+    <state width="1237" height="2" key="GridCell.Tab.0.right" timestamp="1605231851032">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="394" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1605159059995" />
+    <state width="1237" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1605231851032" />
+    <state x="149" y="0" key="SettingsEditor" timestamp="1605230747962">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="149" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1605230747962" />
     <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1605145302525">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -154,9 +176,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="458" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1605145279577" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1605157652708">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1605161676613">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1605157652708" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1605161676613" />
   </component>
 </project>

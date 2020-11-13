@@ -12,7 +12,7 @@ class Employee(models.Model):
 
 
 class Salary(models.Model):
-    employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
+    employee = models.OneToOneField(Employee, on_delete=models.CASCADE, primary_key=True)
     salary = models.IntegerField(null=False)
     bankname = models.CharField(max_length=20, default="no bank info")
 
@@ -21,9 +21,10 @@ class Salary(models.Model):
 
  # one dept can have many employees : Master table -> Employee , Foreign Table -> Dept -> it will have the fk employee
 
-class Department(models.Model):
-    employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
-    deptname = models.CharField(max_length=10, null=False, blank=False)
+
+#class Department(models.Model):
+ #   employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
+  #  deptname = models.CharField(max_length=10, null=False, blank=False)
 
 
 
