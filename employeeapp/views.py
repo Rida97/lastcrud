@@ -11,16 +11,19 @@ def index(request):
 
 
 def create_emp(request):
+    sal = SalaryCreate(request.POST)
     if request.method == 'POST':
+        sal = SalaryCreate(request.POST)
         emp = EmployeeCreate(request.POST)
-        if emp.is_valid():
+        if emp.is_valid() and sal.is_valid():
             emp.save()
-            return redirect('create-sal')
+            sal.save()
+       #     return redirect('create-sal')
         else:
             return HttpResponse("""your form is wrong, reload on <a href = "{{ url : 'index'}}">reload</a>""")
     else:
         emp = EmployeeCreate()
-    return render(request, 'create.html', {'employee': emp})
+    return render(request, 'create.html', {'employee': emp, 'sal':sal})
 
 
 def create_sal(request):
@@ -38,18 +41,20 @@ def create_sal(request):
 
 def update_emp(request, emp_id):
     try:
-
+        get_sal = Salary.objects.get(pk=emp_id)
         get_employee = Employee.objects.get(id=emp_id)  # this returns the emp that needs to be updated -> emp_id is passed from base.html
-    except Employee.DoesNotExist:
+    except (Employee.DoesNotExist, Salary.DoesNotExist):
         return redirect('index')
     employee = EmployeeCreate(request.POST or None, instance=get_employee)  # emp that needs updation is passed here along with the data to be updated in req.POST
-    if employee.is_valid():  # is_valid is form's built in func
+    new_sal = SalaryCreate(request.POST or None, instance=get_sal)
+    if employee.is_valid() or new_sal.is_valid():  # is_valid is form's built in func
         employee.save()
+        new_sal.save()
         print (employee.instance.id) # employee -> form of emp
         print (get_employee)
       #  return redirect('update_sal', get_employee.pk)
-        return redirect('update-sal', emp_id=employee.instance.id)
-    return render(request, 'create.html', {'employee': employee})
+       # return redirect('update-sal', emp_id=employee.instance.id)
+    return render(request, 'create.html', {'employee': employee, 'sal':new_sal})
 
 
 def update_sal(request, emp_id):

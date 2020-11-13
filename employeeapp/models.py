@@ -3,7 +3,7 @@ import uuid
 
 
 class Employee(models.Model):
-    department = models.ForeignKey('Department', on_delete=models.CASCADE)
+    department = models.ForeignKey('Department', on_delete=models.CASCADE) # MANY TO ONE R/SHIP
     name = models.CharField(max_length=20, null=False)
     email = models.EmailField(blank=True)
 

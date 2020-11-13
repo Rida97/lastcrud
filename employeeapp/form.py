@@ -12,7 +12,7 @@ class EmployeeCreate(forms.ModelForm):
 class SalaryCreate(forms.ModelForm):
     class Meta:
         model = Salary
-        fields = '__all__'
+        fields = ['salary', 'bankname']
 
         employee = forms.ModelMultipleChoiceField(queryset=Employee.objects.all(), widget=forms.CheckboxSelectMultiple)
 
